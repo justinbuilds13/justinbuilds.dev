@@ -44,6 +44,10 @@ h3 { font-size: 1.08rem; font-weight: 600; }
 p { margin: 0; max-width: 65ch; }
 .eyebrow { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
 .stack { display: grid; gap: 14px; }
+.bio { display: flex; gap: 18px; align-items: flex-start; }
+.bio p { margin: 0; }
+.avatar { flex: none; width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 3px solid var(--surface); box-shadow: 0 0 0 2px var(--accent); }
+@media (max-width: 420px) { .bio { gap: 14px; } .avatar { width: 64px; height: 64px; } }
 .lede { font-size: 1.15rem; color: var(--muted); }
 header.stack { gap: 18px; }
 .muted { color: var(--muted); }
@@ -420,12 +424,15 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
       <li><b>Follow-ups that run themselves:</b> review requests, abandoned-cart call-backs, and reminders.</li>
     </ul>
     <p>Each one starts with a short look at where your time goes, then a small setup you can measure before going further.</p>
-    <p class="contact"><a class="todo" href="mailto:hello@justinbuilds.dev">hello@justinbuilds.dev</a></p>
+    <p class="contact"><a class="todo" href="mailto:hello@justinbuilds.dev">hello@justinbuilds.dev</a> <a class="todo" href="https://github.com/justinbuilds13">GitHub</a></p>
   </section>
 
   <section class="stack about">
     <h2>About me</h2>
+    <div class="bio">
+    <img class="avatar" src="justin.jpg" width="88" height="88" alt="Justin">
     <p>I'm Justin. I build practical AI systems for small businesses: the kind that answer the phone, take the order and open the door, then keep working when nobody is around. I've built and supported this one since July 2026, working every day with the team that uses it, and every week I fix what real customers run into.</p>
+    </div>
   </section>
 
   <footer>Built and supported on an ongoing basis, 2026. Customer details, the business's name and the inner workings are left out on purpose.</footer>
